@@ -1,10 +1,14 @@
 //abstracts
-
-@use "./SASS//abstracts/variables"
+@import "./SASS/abstracts/mixins"
+@import "./SASS/abstracts/variables"
 
 //base
-@use "./SASS/base/base"
-@use "./SASS/base/reset"
+@import "./SASS/base/base"
+@import "./SASS/base/reset"
+@import "./SASS/base/settings"
 
-//components
-@use "./SASS/components/index"
+//components  //Esto va a sustituir el import en cada archivo .js
+@import "./SASS/components/index"
+
+//operators
+// @use "sass:math"

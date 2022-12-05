@@ -1,11 +1,14 @@
 main
-    color: red
+    //sale de ./abstracts/mixins
+    color: $principalcolor //este sale de ./base/settings
     margin: 1rem
 
     h1
+        @include theme
         text-decoration: underline
         display: inline-block
         &:hover //para no hacer otro "h1:hover"
+            @include theme($background: $principalcolor)
             font-size: 2.2em
             color: blue
             cursor: pointer
