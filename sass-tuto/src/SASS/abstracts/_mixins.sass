@@ -1,3 +1,5 @@
-@mixin theme($background: #00b85c)
-    background-color: $background
-    padding: 1rem
+@mixin linear-gradient($color: red)
+    background: $color
+    background: linear-gradient(90deg, $color 0%, hsla(225, 92%, 70%, 1) 50%, hsla(236, 100%, 72%, 1) 100%)
+    background: -moz-linear-gradient(90deg, $color 0%, hsla(225, 92%, 70%, 1) 50%, hsla(236, 100%, 72%, 1) 100%)
+    background: -webkit-linear-gradient(90deg, $color 0%, hsla(225, 92%, 70%, 1) 50%, hsla(236, 100%, 72%, 1) 100%)

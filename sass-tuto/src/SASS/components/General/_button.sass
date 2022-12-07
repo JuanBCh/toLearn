@@ -1,0 +1,36 @@
+@import "../../base/variables"
+
+.round
+    width: 160px
+    height: 160px
+    border-radius: 50%
+    box-shadow: 0px 7.5px 0px black
+    display: flex
+    justify-content: center
+    align-items: center
+    div
+        width: 125px
+        height: 125px
+        border-radius: 50%
+        background-color: $primary-white
+        display: flex
+        justify-content: center
+        align-items: center
+        box-shadow: 0px 7.5px 1px #0000002a inset
+    &:hover
+        cursor: pointer
+
+.scissors-border
+    background: $primary-scissors
+    background: linear-gradient(0deg, $primary-scissors 0%, $scissors-gradient 100%)
+    box-shadow: 0px 7.5px 0px rgb(206, 134, 0)
+
+.paper-border
+    background: $primary-paper
+    background: linear-gradient(0deg, $primary-paper 0%, $paper-gradient 100%)
+    box-shadow: 0px 7.5px 0px rgb(0, 87, 185)
+
+.rock-border
+    background: $primary-rock
+    background: linear-gradient(0deg, $primary-rock 0%, $rock-gradient 100%)
+    box-shadow: 0px 7.5px 0px rgb(180, 38, 28)
