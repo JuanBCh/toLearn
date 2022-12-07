@@ -1,9 +1,9 @@
 function Score({ score }) {
   return (
-    <div className="score-div">
+    <section className="score-div">
       <p>SCORE</p>
       <span>{score}</span>
-    </div>
+    </section>
   );
 }
 

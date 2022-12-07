@@ -1,24 +1,17 @@
 import { useState } from "react";
 import Button from "../General/Button";
 import Score from "../General/Score";
+import Header from "../Header/Header";
 
-function Main() {
-  const [score, setScore] = useState(0);
+function Main({ score, setScore }) {
   return (
     <main>
-      <header>
-        <div>
-          <p>ROCK</p>
-          <p>PAPER</p>
-          <p>SCISSORS</p>
-        </div>
-        <Score score={score} />
-      </header>
-      <div>
-        <Button img_src={"/images/icon-scissors.svg"} action="scissors" />
+      <Header score={score} />
+      <section className="butons">
         <Button img_src={"/images/icon-paper.svg"} action="paper" />
+        <Button img_src={"/images/icon-scissors.svg"} action="scissors" />
         <Button img_src={"/images/icon-rock.svg"} action="rock" />
-      </div>
+      </section>
     </main>
   );
 }
